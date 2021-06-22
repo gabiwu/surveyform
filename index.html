@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content=width=device-width, initial-scale=1.0>
+  <meta name="author" content="Gabriel Iwuchukwu">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Tech Survey Form</title>
+</head>
+<div class="main">
+  <h1 id="title">Tech Survey Form</h1>
+  <h2 class="description">Thank you for taking the time to fill in this tech survey</h2>
+
+  <div class="main-content">
+    <div class="form-content">
+      <form class="techsurveyform" action="index.html" method="post">
+        <label for="firstname">Name</label><br>
+        <input id="firstname" type="text" name="userName" placeholder="Enter your name"><br>
+        <label for="email">Email</label><br>
+        <input id="email" type="email" name="useremail" placeholder="Enter your email"><br>
+
+        <p>Do you prefer frontend or backend development?</p>
+        <input id="frontend" type="checkbox" name="frontend" value="frontend">
+        <label for="frontend">Frontend</label><br>
+        <input id="backend" type="checkbox" name="backend" value="backend">
+        <label for="backend">Backend</label><br>
+
+        <br><label for="dropdown">What option best describes your role?</label>
+        <select id="dropdown" name="roles">
+          <option value="student">Student</option>
+          <option value="student">Educator</option>
+          <option value="student">Developer</option>
+          <option value="student">Other</option>
+        </select><br>
+        <fieldset>
+          <legend>Would you recommend people to learn how to code?</legend>
+          <input checked id="yes" type="radio" name="action" value="yes">
+          <label for="yes">Yes</label><br>
+          <input id="maybe" type="radio" name="action" value="maybe">
+          <label for="maybe">Maybe</label><br>
+          <input id="no" type="radio" name="no" value="no">
+          <label for="no">No</label>
+        </fieldset><br>
+        <p>What type of content would you like to see more of?</p><br>
+        <input id="html-css" type="checkbox" name="html-css" value="html-css">
+        <label for="html-css">HTML/CSS</label><br>
+        <input id="javascript" type="checkbox" name="javascript" value="javascript">
+        <label for="javascript">JavaScript</label><br>
+        <input id="vuejs" type="checkbox" name="vuejs" value="vuejs">
+        <label for="vuejs">VueJS</label><br>
+        <input id="react" type="checkbox" name="react" value="react">
+        <label for="react">React</label><br>
+        <input id="other" type="checkbox" name="other" value="other">
+        <label for="react">Other</label><br>
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br>
+        <button id="submit" type="submit" name="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</html>

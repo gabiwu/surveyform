@@ -1,0 +1,98 @@
+body {
+  background-color: #FFEEDB;
+  font-family: 'Helvetica', 'Lucida Grande', 'Lato', Tahoma, Sans-Serif;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  font-size: 20px;
+}
+
+.main::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main>h1,
+.main>h2 {
+  text-align: center;
+  font-family: 'Lucida Grande';
+  z-index: 2;
+  position: relative;
+}
+
+.main-content {
+  background-color: #FFF5EB;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px -1px 10px 5px #FB9300;
+}
+
+#firstname, #email, #dropdown, #comments {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+label[for=name],
+label[for=email],
+label[for=frontend],
+label[for=backend],
+label[for=dropdown],
+label[for=comments] {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#html-css,
+#javascript,
+#vuejs,
+#react,
+#other,
+fieldset input {
+  height: 20px;
+  width: 20px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+
+#comments {
+  min-height: 160px;
+}
+
+label[for=comments] {
+  margin-top: 20px;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(251, 147, 0, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid;
+  font-size: 20px;
+}
